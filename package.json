@@ -1,7 +1,7 @@
 {
-  "name": "shadow-electron-starter",
+  "name": "electron-cljs-reagent-webgpu",
   "version": "1.0.0",
-  "description": "shadow-cljs electron starter",
+  "description": "electron-cljs-reagent-webgpu starter",
   "main": "dist/main.js",
   "scripts": {
     "dev": "clj -M:cider:shadow-cljs watch main renderer",
@@ -13,7 +13,7 @@
     "reagent",
     "electron"
   ],
-  "author": "Ahonn Jiang <ahonn95@outlook.com>",
+  "author": "Markus Walther <mark@saiko.tech>",
   "license": "MIT",
   "devDependencies": {
     "electron": "^8.2.5",

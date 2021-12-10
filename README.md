@@ -2,14 +2,16 @@
 
 Audio-Visual things with ClojureScript + Shadow-cljs + Electron + Reagent + GLSL + SPIR-V
 
+GLSL & SPIR-V still TODO
+
 ## How to Run
 ```
-yarn global add electron-prebuilt
+yarn global add electron-nightly
 yarn global add shadow-cljs
 yarn
 
 yarn run dev
-electron .
+electron --enable-unsafe-webgpu --enable-features=Vulkan .
 ```
 
 ## Release

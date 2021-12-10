@@ -8,6 +8,6 @@
                  :main app.main.core/main}
 
           :renderer {:target :browser
-                     :output-dir "public/js"
+                     :output-dir "dist/public/js"
                      :asset-path "js"
                      :modules {:renderer {:init-fn app.renderer.core/start!}}}}}
