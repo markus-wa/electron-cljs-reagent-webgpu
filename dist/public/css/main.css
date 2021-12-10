@@ -1,0 +1,12 @@
+body {
+    background-color: grey;
+}
+
+#app-container {
+    height: calc(100vh - 16px);
+}
+
+.logos img {
+  width: 100px;
+  margin-left: 5px;
+}

@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:deps {:aliases [:shadow-cljs-build :cider]}
+
+ :dev-http {8080 "public"}
+
+ :builds {:main {:target :node-script
+                 :output-to "dist/main.js"
+                 :main app.main.core/main}
+
+          :renderer {:target :browser
+                     :output-dir "public/js"
+                     :asset-path "js"
+                     :modules {:renderer {:init-fn app.renderer.core/start!}}}}}

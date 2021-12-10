@@ -1,0 +1,26 @@
+{
+  "name": "shadow-electron-starter",
+  "version": "1.0.0",
+  "description": "shadow-cljs electron starter",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "clj -M:cider:shadow-cljs watch main renderer",
+    "build": "clj -M:cider:shadow-cljs compile main renderer",
+    "clean": "rm -rf public/js/* && rm -rf target"
+  },
+  "keywords": [
+    "shadow-cljs",
+    "reagent",
+    "electron"
+  ],
+  "author": "Ahonn Jiang <ahonn95@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "shadow-cljs": "^2.8.110"
+  },
+  "dependencies": {
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  }
+}
