@@ -27,3 +27,4 @@ electron-packager . HelloWorld --platform=darwin --arch=x64 --version=1.4.13
 ## Acknowledgements
 
 - [ahonn/shadow-electron-starter](https://github.com/ahonn/shadow-electron-starter)
+- [James226/webgpu-electron](https://github.com/James226/webgpu-electron)
