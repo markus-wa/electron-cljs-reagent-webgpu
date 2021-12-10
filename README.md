@@ -10,8 +10,6 @@ Only tested on Ubuntu 20.04 so far, some instructions missing - please get in to
 
 ## How to Run
 ```
-yarn global add electron-nightly
-yarn global add shadow-cljs
 yarn
 
 yarn run dev
