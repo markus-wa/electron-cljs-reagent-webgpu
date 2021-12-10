@@ -16,7 +16,7 @@
   "author": "Markus Walther <mark@saiko.tech>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.2.5",
+    "electron": "^11.5.0",
     "shadow-cljs": "^2.8.110"
   },
   "dependencies": {
