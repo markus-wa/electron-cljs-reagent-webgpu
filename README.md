@@ -15,7 +15,7 @@ yarn global add shadow-cljs
 yarn
 
 yarn run dev
-electron --enable-unsafe-webgpu --enable-features=Vulkan .
+yarn run electron # in another terminal
 ```
 
 ## Release

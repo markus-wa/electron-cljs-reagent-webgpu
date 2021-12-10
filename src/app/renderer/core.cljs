@@ -1,5 +1,5 @@
 (ns app.renderer.core
-  (:require [reagent.core :as r :refer [atom]]
+  (:require [reagent.core :as r]
             [reagent.dom :as rd]
             [cljs.core.async :refer [go]]
             [cljs.core.async.interop :refer-macros [<p!]])
@@ -9,8 +9,6 @@
 (def vertex-shader-src (inline-resource "shaders/vertex.wgsl"))
 
 (enable-console-print!)
-
-(defonce state (atom 0))
 
 (def swap-chain-format "bgra8unorm")
 
@@ -22,13 +20,11 @@
                          (clj->js
                           {:vertex
                            {:module
-                            (.createShaderModule device
-                                                 #js{:code vertex-shader-src})
+                            (.createShaderModule device #js{:code vertex-shader-src})
                             :entryPoint "main"}
                            :fragment
                            {:module
-                            (.createShaderModule device
-                                                 #js{:code fragment-shader-src})
+                            (.createShaderModule device #js{:code fragment-shader-src})
                             :entryPoint "main"
                             :targets [{:format swap-chain-format}]}
                            :primitive
